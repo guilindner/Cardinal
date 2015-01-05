@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class product_product(osv.osv):
     _inherit = "product.product"
 
