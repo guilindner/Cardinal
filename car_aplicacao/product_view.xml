@@ -1,11 +1,17 @@
-<record id="product_mrsp_form_view" model="ir.ui.view">
-    <field name="name">product.normal.form</field>
-    <field name="model">product.product</field>
-    <field name="inherit_id" ref="product.product_normal_form_view"/>
-    <field eval="7" name="priority"/>
-    <field name="arch" type="xml">
-        <field name="type" position="before">
-            <field name="car_aplicacao" />
-        </field>
-    </field>
-</record>
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="product_mrsp_form_view" model="ir.ui.view">
+            <field name="name">product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <field name="type" position="after">
+                    <field name="car_aplicacao"/>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</openerp>
